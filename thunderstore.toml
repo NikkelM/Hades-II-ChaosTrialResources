@@ -1,0 +1,45 @@
+[config]
+schemaVersion = "0.0.1"
+
+
+[package]
+namespace = "NikkelM"
+name = "Resources_In_Chaos_Trials"
+versionNumber = "0.0.1"
+description = "Enables resource spawns (Plants, Seeds, Ore, Fish, and Pacifiable Shades) in Chaos Trials. By default, only randomized trials have resources, use the config to enable them for all trials."
+websiteUrl = "https://github.com/NikkelM/Hades-II-ChaosTrialResources"
+containsNsfwContent = false
+
+[package.dependencies]
+Hell2Modding-Hell2Modding = "1.0.88"
+LuaENVY-ENVY = "1.2.0"
+SGG_Modding-Chalk = "2.1.1"
+SGG_Modding-ReLoad = "1.0.2"
+SGG_Modding-SJSON = "1.0.0"
+SGG_Modding-ModUtil = "4.0.1"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[[build.copy]]
+source = "./LICENSE"
+target = "./LICENSE"
+
+[[build.copy]]
+source = "./src"
+target = "./plugins"
+
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "hades-ii", ]
+
+[publish.categories]
+hades-ii = [ "mods" ]
