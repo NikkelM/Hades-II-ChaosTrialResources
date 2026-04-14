@@ -6,7 +6,7 @@ schemaVersion = "0.0.1"
 namespace = "NikkelM"
 name = "Resources_In_Chaos_Trials"
 versionNumber = "1.0.0"
-description = "Enables resource spawns (plants, seeds, ore, fish, and pacifiable shades) in Chaos Trials. By default, only randomized trials have resources, use the config to enable them for all trials."
+description = "Enables resource spawns (plants, seeds, ore, fish, and pacifiable shades) in Chaos Trials and Dream Dives. By default, only Dream Dives and randomized Chaos Trials have resources, use the config to enable them for all Trials."
 websiteUrl = "https://github.com/NikkelM/Hades-II-ChaosTrialResources"
 containsNsfwContent = false
 

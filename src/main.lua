@@ -41,7 +41,7 @@ public.config = config -- so other mods can access our config
 local function on_ready()
 	if config.enabled == false then return end
 
-	import "Scripts/BountyData.lua"
+	import "Scripts/RunLogic.lua"
 end
 
 local function on_reload()
