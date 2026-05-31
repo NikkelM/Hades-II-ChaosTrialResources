@@ -40,8 +40,10 @@ public.config = config -- so other mods can access our config
 
 local function on_ready()
 	if config.enabled == false then return end
+	mod = modutil.mod.Mod.Register(_PLUGIN.guid)
 
 	import "Scripts/RunLogic.lua"
+	import "Scripts/TraitData_Demeter.lua"
 end
 
 local function on_reload()
