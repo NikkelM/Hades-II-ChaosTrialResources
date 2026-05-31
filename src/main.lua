@@ -42,6 +42,7 @@ local function on_ready()
 	if config.enabled == false then return end
 
 	import "Scripts/RunLogic.lua"
+	import "Scripts/TraitData_Demeter.lua"
 end
 
 local function on_reload()

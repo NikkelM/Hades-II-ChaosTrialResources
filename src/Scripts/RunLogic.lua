@@ -33,7 +33,9 @@ end
 modutil.mod.Path.Wrap("CreateRoom", function(base, roomData, args)
 	local room = base(roomData, args)
 
-	if not areResourcesEnabledThroughModForCurrentRun(game.CurrentRun) then
+	mod.ResourcesEnabledForCurrentRun = areResourcesEnabledThroughModForCurrentRun(game.CurrentRun)
+
+	if not mod.ResourcesEnabledForCurrentRun then
 		return room
 	end
 
