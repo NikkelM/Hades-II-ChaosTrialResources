@@ -16,7 +16,7 @@ game.TraitData.PlantHealthBoon.GameStateRequirements.OrRequirements = {
 	-- Alternatively, also allow if mod config allows spawning resources in this run
 	{
 		{
-			PathTrue = { _PLUGIN.guid, "resourcesEnabledForCurrentRun" },
+			PathTrue = { _PLUGIN.guid, "ResourcesEnabledForCurrentRun" },
 		},
 	},
 }
